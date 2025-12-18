@@ -6,7 +6,7 @@
 /*   By: jnovo-fe <jnovo-fe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:36:32 by jnovo-fe          #+#    #+#             */
-/*   Updated: 2025/12/11 21:28:23 by jnovo-fe         ###   ########.fr       */
+/*   Updated: 2025/12/13 13:21:47 by jnovo-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ void	ft_convert_u(t_str *str, t_flags *flags);
 void	ft_convert_x(t_str *str, t_flags *flags);
 void	ft_convert_percentage(t_str *str, t_flags *flags);
 
-//hel[er functions for conversions
+//helper functions for conversions
 
 size_t	ft_strlen(const char *s);
 void	ft_padding(int pad, t_str *str, t_flags *flags);

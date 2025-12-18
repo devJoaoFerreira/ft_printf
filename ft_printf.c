@@ -6,7 +6,7 @@
 /*   By: jnovo-fe <jnovo-fe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:40:51 by jnovo-fe          #+#    #+#             */
-/*   Updated: 2025/12/11 22:13:26 by jnovo-fe         ###   ########.fr       */
+/*   Updated: 2025/12/13 13:20:24 by jnovo-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,13 +54,3 @@ int	ft_more_printf(va_list args, const char *string)
 	free (str);
 	return (str->count);
 }
-
-/* int	main(void)
-{
-	int a;
-	int b;
-	a = ft_printf("%#x\n", 0);
-	b = printf("%#x\n", 0);
-	printf("my = %d\nog = %d", a, b);
-	return (0);
-} */
