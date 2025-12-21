@@ -6,7 +6,7 @@
 #    By: jnovo-fe <jnovo-fe@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/12 14:29:32 by jnovo-fe          #+#    #+#              #
-#    Updated: 2025/12/09 14:01:50 by jnovo-fe         ###   ########.fr        #
+#    Updated: 2025/12/18 14:39:08 by jnovo-fe         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,9 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
+
+main: main.c $(NAME)
+	$(CC) $(CFLAGS) main.c $(NAME)
 
 bonus: all
 

@@ -6,7 +6,7 @@
 /*   By: jnovo-fe <jnovo-fe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:36:32 by jnovo-fe          #+#    #+#             */
-/*   Updated: 2025/12/13 13:21:47 by jnovo-fe         ###   ########.fr       */
+/*   Updated: 2025/12/21 18:27:30 by jnovo-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	ft_convert_p(t_str *str, t_flags *flags);
 void	ft_convert_di(t_str *str, t_flags *flags);
 void	ft_convert_u(t_str *str, t_flags *flags);
 void	ft_convert_x(t_str *str, t_flags *flags);
-void	ft_convert_percentage(t_str *str, t_flags *flags);
+void	ft_convert_percentage(t_str *str);
 
 //helper functions for conversions
 
@@ -94,7 +94,7 @@ void	ft_write_prefix(t_str *str);
 
 //functions to fill structs
 
-t_str	*ft_fill_str(t_str *str, const char *string, va_list args);
+t_str	*ft_fill_str(const char *string, va_list args);
 t_flags	*ft_fill_flags(t_flags *flags);
 
 #endif

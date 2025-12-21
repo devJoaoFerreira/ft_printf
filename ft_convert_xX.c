@@ -6,7 +6,7 @@
 /*   By: jnovo-fe <jnovo-fe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/05 16:25:47 by jnovo-fe          #+#    #+#             */
-/*   Updated: 2025/12/11 22:11:44 by jnovo-fe         ###   ########.fr       */
+/*   Updated: 2025/12/19 16:13:37 by jnovo-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,10 @@ void	ft_convert_x(t_str *str, t_flags *flags)
 
 	x = va_arg(str->args, unsigned int);
 	len = ft_hexa_len(x);
-	if (flags->prefix)
-		len += 2;
 	if (flags->precision == 0 && x == 0)
 		len = 0;
 	pad = flags->width - ft_max(len, flags->precision);
+	pad -= 2 * flags->prefix * (x != 0);
 	if (!flags->left_justify && flags->padding == ' ')
 		ft_padding(pad, str, flags);
 	if (flags->prefix && x != 0)

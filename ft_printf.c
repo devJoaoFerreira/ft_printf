@@ -6,7 +6,7 @@
 /*   By: jnovo-fe <jnovo-fe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 20:40:51 by jnovo-fe          #+#    #+#             */
-/*   Updated: 2025/12/13 13:20:24 by jnovo-fe         ###   ########.fr       */
+/*   Updated: 2025/12/18 14:32:58 by jnovo-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ int	ft_more_printf(va_list args, const char *string)
 	int		count;
 	t_str	*str;
 
-	str = NULL;
-	str = ft_fill_str(str, string, args);
+	str = ft_fill_str(string, args);
 	if (!str)
 		return (0);
 	while (str->string[str->i])
@@ -52,5 +51,5 @@ int	ft_more_printf(va_list args, const char *string)
 	}
 	count = str->count;
 	free (str);
-	return (str->count);
+	return (count);
 }

@@ -6,7 +6,7 @@
 /*   By: jnovo-fe <jnovo-fe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/22 13:40:08 by jnovo-fe          #+#    #+#             */
-/*   Updated: 2025/12/09 14:09:55 by jnovo-fe         ###   ########.fr       */
+/*   Updated: 2025/12/21 18:27:38 by jnovo-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,5 +108,5 @@ void	ft_parse_conversions(t_str *str, t_flags *flags)
 	if (str->string[str->i] == 'x' || str->string[str->i] == 'X')
 		ft_convert_x(str, flags);
 	if (str->string[str->i] == '%')
-		ft_convert_percentage(str, flags);
+		ft_convert_percentage(str);
 }

@@ -6,14 +6,16 @@
 /*   By: jnovo-fe <jnovo-fe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/22 16:51:08 by jnovo-fe          #+#    #+#             */
-/*   Updated: 2025/12/09 13:56:19 by jnovo-fe         ###   ########.fr       */
+/*   Updated: 2025/12/19 16:12:34 by jnovo-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-t_str	*ft_fill_str(t_str *str, const char *string, va_list args)
+t_str	*ft_fill_str(const char *string, va_list args)
 {
+	t_str	*str;
+
 	str = malloc(sizeof(t_str));
 	if (!str)
 		return (NULL);
